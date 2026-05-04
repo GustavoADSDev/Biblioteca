@@ -4,7 +4,7 @@ Aplicação web para gerenciamento de livros feita com JavaScript puro.
 
 ## Demo
 
-Acesse: [[(https://biblioteca-liard-mu.vercel.app/)]]
+Acesse: (https://biblioteca-liard-mu.vercel.app/)
 
 ## Funcionalidades
 
