@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>📚 Biblioteca</h1>
+    <button id="openModal">+ Novo Livro</button>
+  </header>
+
+  <div class="controls">
+    <input id="search" placeholder="Buscar..." />
+    <select id="sort">
+      <option value="title">Título</option>
+      <option value="pages">Páginas</option>
+      <option value="read">Status</option>
+    </select>
+  </div>
+
+  <div class="stats">
+    <span id="total"></span>
+    <span id="read"></span>
+    <span id="notRead"></span>
+  </div>
+
+  <div id="library" class="library"></div>
+</div>
+
+<dialog id="modal">
+  <form id="book-form">
+    <h2>Novo Livro</h2>
+
+    <input name="title" placeholder="Título" autocomplete="off" required>
+    <input name="author" placeholder="Autor" autocomplete="off" required>
+    <input name="pages" type="number" autocomplete="off" placeholder="Páginas" required>
+
+    <label>
+      <input type="checkbox" name="read"> Lido
+    </label>
+
+    <div class="actions">
+      <button type="submit">Salvar</button>
+      <button type="button" id="closeModal">Cancelar</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.app {
+  width: 100%;
+  max-width: 900px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#openModal {
+  background: #22c55e;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.controls input, .controls select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  flex: 1;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.book {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 15px;
+  transition: 0.25s;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+}
+
+.book h3 {
+  margin-bottom: 5px;
+}
+
+.book p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.book button {
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.toggle {
+  background: #3b82f6;
+  color: white;
+}
+
+.remove {
+  background: #ef4444;
+  color: white;
+}
+
+/* MODAL */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background: #1e293b;
+  color: white;
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.6);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
